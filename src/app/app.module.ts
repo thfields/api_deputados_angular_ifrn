@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ExibeDeputadoComponent } from './exibe-deputado/exibe-deputado.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BuscaDeputadoComponent } from './busca-deputado/busca-deputado.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExibeDeputadoComponent,
+    BuscaDeputadoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

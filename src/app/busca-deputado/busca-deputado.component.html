@@ -1,0 +1,20 @@
+<div class="menu">
+<div>
+  <label for="pesquisa1">nome</label>
+  <input type="text"id="pesquisa1" #nome>
+</div>
+<div>
+  <label for="pesquisa2">partido</label>
+  <input type="text"id="pesquisa2" #partido>
+</div>
+<div>
+  <button (click)="pesquisa(nome.value, partido.value)">pesquisar</button>
+</div>
+<div>
+  <ul *ngFor="let dps of deputados">
+    <li><img [src]="dps.urlFoto"></li>
+    <li>{{dps.nome}}</li>
+    <li>{{dps.siglaPartido}}-{{dps.siglaUf}}</li>
+  </ul>
+</div>
+</div>
